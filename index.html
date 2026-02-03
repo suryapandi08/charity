@@ -1,0 +1,1106 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" media="all">
+    <!-- Fonts Awesome CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/fontawesome/css/all.min.css">
+    <!-- Elmentkit Icon CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/elementskit-icon-pack/assets/css/ekiticons.css">
+    <!-- jquery-ui css -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/jquery-ui/jquery-ui.min.css">
+    <!-- modal video css -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/modal-video/modal-video.min.css">
+    <!-- light box css -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/fancybox/dist/jquery.fancybox.min.css">
+    <!-- slick slider css -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/slick/slick-theme.css">
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&amp;display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Unbound | Charity Nonprofit HTML5 Template</title>
+
+    <style>
+        .home-banner {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            padding: 160px 0;
+            color: #fff;
+        }
+
+        .home-banner .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .sub-title {
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .banner-title {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        .banner-title span {
+            color: #ffd369;
+        }
+
+        .banner-text p {
+            font-size: 18px;
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+
+        .announcement-box {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 20px 25px;
+            border-left: 4px solid #ffd369;
+            margin-bottom: 35px;
+        }
+
+        .announcement-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .banner-button a {
+            margin-right: 15px;
+        }
+
+        /* ---------- RESPONSIVE HERO SECTION ---------- */
+
+        /* Tablets */
+        @media (max-width: 991px) {
+            .home-banner {
+                padding: 120px 0;
+                text-align: center;
+            }
+
+            .banner-title {
+                font-size: 38px;
+            }
+
+            .banner-text p {
+                font-size: 16px;
+                margin: 0 auto 25px;
+            }
+
+            .announcement-box {
+                margin: 0 auto 30px;
+                text-align: left;
+            }
+
+            .banner-button {
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+        }
+
+        /* Mobiles */
+        @media (max-width: 575px) {
+            .home-banner {
+                padding: 90px 0;
+                background-position: center right;
+            }
+
+            .sub-title {
+                font-size: 12px;
+                line-height: 1.4;
+            }
+
+            .banner-title {
+                font-size: 28px;
+                line-height: 1.3;
+            }
+
+            .banner-title span {
+                display: block;
+            }
+
+            .banner-text p {
+                font-size: 15px;
+                line-height: 1.6;
+            }
+
+            .announcement-box {
+                padding: 15px 18px;
+                font-size: 14px;
+            }
+
+            .banner-button a {
+                width: 100%;
+                text-align: center;
+                padding: 14px 0;
+            }
+        }
+
+        .runway-content h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .runway-content p {
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .runway-image img {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .home-about-content p {
+            font-size: 16.5px;
+            line-height: 1.8;
+            margin-bottom: 14px;
+        }
+
+        .home-about-content strong {
+            color: #000;
+        }
+
+        .home-about-image img {
+            border-radius: 18px;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.18);
+        }
+
+        .home-blog .feature-image img {
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+        }
+
+        .home-blog .post {
+            border-radius: 16px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .home-blog .post:hover {
+            transform: translateY(-6px);
+        }
+
+
+
+
+
+        .partner-section {
+            padding: 90px 0;
+            background: #fefefe;
+        }
+
+        .partner-icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        /* Pastel Icon Boxes */
+        .partner-icon-box {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 16px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #fff;
+        }
+
+        .partner-icon-box i {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        /* Elegant pastel colors */
+        .partner-icon-box.impact {
+            background: #FFB6B9;
+            /* soft pink */
+        }
+
+        .partner-icon-box.visibility {
+            background: #FFD6A5;
+            /* soft orange */
+        }
+
+        .partner-icon-box.community {
+            background: #B5EAD7;
+            /* soft green */
+        }
+
+        /* Hover animation */
+        .partner-icon-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* CTA button */
+        .btn-pastel {
+            background: #F15B43;
+            color: #fff;
+            border-radius: 50px;
+            padding: 12px 30px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-pastel:hover {
+            background: #CB4B36;
+        }
+
+        /* Animations */
+        .animate-fade {
+            animation: fadeUp 1s ease forwards;
+        }
+
+        .animate-left {
+            animation: slideLeft 1.1s ease forwards;
+        }
+
+        .animate-right {
+            animation: slideRight 1.1s ease forwards;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideRight {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Mobile */
+        @media(max-width:768px) {
+            .partner-icons {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="home">
+    <div id="siteLoader" class="site-loader">
+        <div class="preloader-content">
+            <img src="assets/images/logo/Untitled design - 2026-01-31T170525.458.png" alt="">
+        </div>
+    </div>
+    <div id="page" class="full-page">
+        <header id="masthead" class="site-header site-header-transparent">
+            <!-- header html start -->
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-none d-lg-block">
+                            <div class="header-contact-info">
+                                <ul>
+                                    <li>
+                                        <a href="tel:+01-977-2599-12"><i class="fas fa-phone-alt"></i> +01 (977) 2599
+                                            12</a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:beyondthelimit.tn@gmail.com" class="email-link">
+  <i class="fas fa-envelope"></i>
+  <span>beyondthelimit.tn@gmail.com</span>
+</a>
+
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i> 3146 Koontz Lane, California
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-lg-end justify-content-between">
+                            <div class="header-social social-links">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com/" target="_blank">
+                                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/" target="_blank">
+                                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" https://www.instagram.com/beyondthelimit.tn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/" target="_blank">
+                                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-search-icon">
+                                <button class="search-icon">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-header">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div class="site-identity">
+                        <h1 class="site-title">
+                            <a href="index.html">
+                                <img class="white-logo" src="assets/images/logo/png020.png" alt="logo">
+                                <img class="black-logo" src="assets/images/logo/Untitled design - 2026-01-31T170525.458.png" alt="logo">
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="main-navigation">
+                        <nav id="navigation" class="navigation d-none d-lg-inline-block">
+                            <ul>
+                                <li class="current-menu-item">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="">
+                                    <a href="#events">Events</a>
+
+                                </li>
+                                <li class="">
+                                    <a href="#about">About Us</a>
+                                </li>
+                                <li class="">
+                                    <a href="#partner">Partner</a>
+
+                                </li>
+                                <li class="">
+                                    <a href="#blog">Blog</a>
+                                <li>
+                                    <a href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-container"></div>
+        </header>
+
+
+        <main id="content" class="site-main">
+            <!-- home banner section html start -->
+
+            <section  id="home" class="home-banner" style="background-image: url('assets/images/hero/hero (2).png');">
+
+                <div class="overlay"></div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="banner-content">
+
+                                <!-- Headline Options -->
+                                <div class="sub-title">
+                                    Reframing Potential • Designed for Every Mind • Where Brilliance Takes the Stage
+                                </div>
+
+                                <!-- Main Statement -->
+                                <h1 class="banner-title">
+                                    We don't ask our children to fit the world.
+                                    <br>
+                                    <span>We are building a world that fits them.</span>
+                                </h1>
+
+                                <!-- Narrative -->
+                                <div class="banner-text">
+                                    <p>
+                                        It’s time to change the narrative.
+                                        We believe that neurodivergent children shouldn’t have to
+                                        <strong>“fit in”</strong> to a world that wasn’t built for them.
+                                        Instead, we’re creating a world where they can shine
+                                        exactly as they are.
+                                    </p>
+                                </div>
+
+                                <!-- Announcement Block -->
+                                <div class="announcement-box">
+                                    <p class="announcement-title">This Year, We Are Taking the Stage</p>
+                                    <p>
+                                        Introducing the <strong>Beyond the Box Fashion Show</strong> —
+                                        a celebration of unique brilliance, confidence, and individuality.
+                                    </p>
+                                </div>
+
+                                <!-- CTA Buttons -->
+                                <div class="banner-button">
+                                    <a href="contact.html" class="button-round">
+                                        The Runway Starts Here
+                                    </a>
+                                    <a href="single-page.html" class="outline-round outline-round-white">
+                                        Partner With Us
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- home client section html end -->
+            <!-- home donate section html start -->
+            <section id="events" class="home-donate pt-5 bg-light-grey">
+                <div class="container">
+                    <div class="section-head text-center">
+                        <div class="sub-title">EVENT</div>
+                        <h2 class="section-title">The Runway of Possibilities</h2>
+                    </div>
+
+                    <div class="donate-inner">
+                        <div class="row align-items-center">
+
+                            <!-- LEFT SIDE IMAGE -->
+                            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                                <div class="runway-image">
+                                    <img src="assets/images/event/event1.png" alt="The Runway of Possibilities"
+                                        class="img-fluid rounded">
+                                </div>
+                            </div>
+
+                            <!-- RIGHT SIDE CONTENT -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="runway-content">
+                                    <h3>Fashion is the ultimate form of self-expression.</h3>
+
+                                    <p>
+                                        <strong>[Event Name]</strong> is more than a show; it is a platform for
+                                        our children to reclaim the spotlight.
+                                    </p>
+
+                                    <p>
+                                        Every stride, every outfit, and every smile is a testament to their
+                                        journey.
+                                    </p>
+
+                                    <a href="#contact" class="button-round mt-3">
+                                        Register Your Child to Walk
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="donate-inner">
+                        <div class="row">
+
+                            <!-- Card 1 -->
+                            <div class="col-sm-6 col-lg-4">
+                                <article class="donate-content secondary-bg">
+                                    <h3>
+                                        <i aria-hidden="true" class="icon icon-user1"></i>
+                                        Sensory-First Design
+                                    </h3>
+                                    <p>
+                                        A runway built with comfort in mind — adapted lighting and sound
+                                        to ensure every model feels safe, confident, and empowered.
+                                    </p>
+
+                                </article>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-sm-6 col-lg-4">
+                                <article class="donate-content primary-bg">
+                                    <h3>
+                                        <i aria-hidden="true" class="icon icon-save-money"></i>
+                                        Custom Couture
+                                    </h3>
+                                    <p>
+                                        Collaborative fashion designs that celebrate the personality,
+                                        creativity, and individuality of every child on the runway.
+                                    </p>
+
+                                </article>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="col-sm-6 col-lg-4">
+                                <article class="donate-content bg-transparent-img"
+                                    style="background-image: url(assets/images/event/event2.png);">
+                                    <h3>
+                                        <i aria-hidden="true" class="icon icon-hand_shake"></i>
+                                        The Grand Finale
+                                    </h3>
+                                    <p>
+                                        Join us for a high-fashion celebration where inclusion takes
+                                        center stage and every stride tells a powerful story.
+                                    </p>
+
+                                </article>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- home donate section html end -->
+
+
+
+            <!-- home about section html start -->
+            <section id="about" class="home-about">
+                <div class="container">
+
+                    <!-- SECTION HEADING (CENTERED) -->
+                    <div class="section-head text-center mb-5">
+                        <div class="sub-title">About Us</div>
+                        <h2 class="section-title">Our Collective Commitment</h2>
+                    </div>
+
+                    <div class="row align-items-center">
+
+                        <!-- LEFT : FOUNDERS IMAGE -->
+                        <div class="col-lg-7">
+                            <div class="home-about-left">
+                                <div class="home-about-image">
+                                    <img src="assets/images/about/about.png" alt="Founders of Beyond the Limit">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT : STORY CONTENT -->
+                        <div class="col-lg-5">
+                            <div class="home-about-right">
+                                <div class="home-about-content">
+
+                                    <p>
+                                        <strong>The Partnership.</strong><br>
+                                        We saw a gap between the tireless work happening behind closed doors
+                                        and the recognition these children truly deserve. By uniting our
+                                        foundation and rehabilitation center, we chose to tear down the walls
+                                        of the “clinic” and replace them with the lights of the “runway.”
+                                    </p>
+
+                                    <p>
+                                        <strong>The Philosophy.</strong><br>
+                                        We don’t believe in fitting in — we believe in standing out.
+                                        <em>Beyond the Limit</em> was created to be a bridge, moving children
+                                        from the milestones of rehabilitation to the magic of the spotlight.
+                                        A child’s journey is not defined by challenges, but by the brilliance
+                                        they carry within.
+                                    </p>
+
+                                    <p>
+                                        <strong>The Future.</strong><br>
+                                        Our mission begins with the neurodivergent community, whose unique
+                                        perspectives prove that potential has no ceiling. Year after year,
+                                        we are expanding this platform until every barrier is removed —
+                                        leaving a world where every child, from every walk of life, is
+                                        invited to take center stage.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- home about section html end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <section id="partner" class="partner-section">
+                <div class="container">
+
+                    <!-- HEADING -->
+                    <div class="section-head text-center animate-fade">
+                        <div class="sub-title">PARTNER WITH US</div>
+                        <h2 class="section-title">Join the Movement</h2>
+                    </div>
+
+                    <div class="row align-items-center mt-5">
+
+                        <!-- LEFT CONTENT -->
+                        <div class="col-lg-6 animate-left">
+                            <div class="partner-content">
+                                <h3>Why Sponsor?</h3>
+                                <p>
+                                    By partnering with <strong>Beyond the Box</strong>, you aren’t just
+                                    sponsoring a fashion show — you are investing in a more inclusive
+                                    future.
+                                </p>
+                                <p>
+                                    Help us provide the stage, the costumes, and the confidence our
+                                    children deserve.
+                                </p>
+
+                                <h4 class="mt-4">Ways to Support</h4>
+                                <ul class="partner-list">
+                                    <li>The Title Sponsor</li>
+                                    <li>Co-Sponsor</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT ICONS -->
+                        <div class="col-lg-6 animate-right">
+                            <div class="partner-icons">
+
+                                <div class="partner-icon-box impact">
+                                    <i class="icon icon-hand_shake"></i>
+                                    <h5>Impact</h5>
+                                    <p>Creating meaningful opportunities for every child.</p>
+                                </div>
+
+                                <div class="partner-icon-box visibility">
+                                    <i class="icon icon-eye"></i>
+                                    <h5>Visibility</h5>
+                                    <p>Showcase your brand on a powerful inclusive platform.</p>
+                                </div>
+
+                                <div class="partner-icon-box community">
+                                    <i class="icon icon-users"></i>
+                                    <h5>Community</h5>
+                                    <p>Be part of a movement that truly matters.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="partner-cta text-center animate-fade mt-5">
+                        <a href="assets/docs/sponsorship-deck.pdf" class="button-round btn-pastel" download>
+                            Download the Sponsorship Deck
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- The Pulse : Blog / Media -->
+            <section id="blog" class="home-blog">
+                <div class="container">
+
+                    <!-- SECTION HEADING -->
+                    <div class="section-head text-center">
+                        <div class="head-wrap">
+                            <div class="sub-title">Blog</div>
+                            <h2 class="section-title">Model Spotlights & Behind the Scenes</h2>
+                        </div>
+                    </div>
+
+
+                    <!-- GRID -->
+                    <div class="blog-inner">
+                        <div class="row">
+
+                            <!-- STORY 1 -->
+                            <div class="col-md-6 col-lg-4">
+                                <article class="post">
+                                    <figure class="feature-image">
+                                        <a href="blog-single.html">
+                                            <img src="assets/images/blog/1.png" alt="Meet Aarav">
+                                        </a>
+                                    </figure>
+                                    <div class="entry-content">
+                                        <h3>
+                                            <a href="blog-single.html">
+                                                Meet Aarav: Why He Chose the “Electric Blue” Suit
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            A young model’s bold choice and the confidence behind his
+                                            unforgettable runway moment.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- STORY 2 -->
+                            <div class="col-md-6 col-lg-4">
+                                <article class="post">
+                                    <figure class="feature-image">
+                                        <a href="blog-single.html">
+                                            <img src="assets/images/blog/2.png" alt="Runway Training">
+                                        </a>
+                                    </figure>
+                                    <div class="entry-content">
+                                        <h3>
+                                            <a href="blog-single.html">
+                                                The Science of Style: Mastering the Runway Stride
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            How our rehabilitation team blends movement, posture, and
+                                            confidence to prepare children for the spotlight.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- STORY 3 -->
+                            <div class="col-md-6 col-lg-4">
+                                <article class="post">
+                                    <figure class="feature-image">
+                                        <a href="blog-single.html">
+                                            <img src="assets/images/blog/3.png" alt="Event Countdown">
+                                        </a>
+                                    </figure>
+                                    <div class="entry-content">
+                                        <h3>
+                                            <a href="blog-single.html">
+                                                April Countdown: 30 Days Until the Lights Go Up
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            Behind-the-scenes moments, fittings, rehearsals, and the
+                                            excitement building toward the big day.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+            <!-- home blog section html end -->
+
+            <!-- home contact section html start -->
+            <section  id="contact" class="home-contact" style="background-image: url(assets/images/contact-bf/contact.png);">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <!-- LEFT: CTA TEXT -->
+                        <div class="col-lg-6">
+                            <div class="sub-title">CALL TO ACTION</div>
+                            <h2 class="section-title">
+                                Be a Part of Their Spotlight
+                            </h2>
+                            <p>
+                                Every child deserves a stage to shine. By joining Beyond the Limit,
+                                you help neurodivergent children walk the runway with confidence,
+                                creativity, and joy. Your support empowers them to be seen, heard,
+                                and celebrated for who they truly are.
+                            </p>
+
+
+                        </div>
+
+                        <!-- RIGHT: CONTACT FORM -->
+                        <div class="col-lg-6">
+                            <div class="home-contact-form">
+                                <form class="contact-form row">
+                                    <div class="col-12 mb-4">
+                                        <input type="text" class="form-control" placeholder="Your Name*">
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <input type="email" class="form-control" placeholder="Your Email*">
+                                    </div>
+                                    <div class="col-sm-12 mb-4">
+                                        <input type="number" class="form-control" placeholder="Phone Number*">
+                                    </div>
+
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="button-round">
+                                            Join the Movement
+                                        </button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Optional overlay for better readability -->
+                <div class="overlay" style="background: rgba(0,0,0,0.4);"></div>
+            </section>
+
+            <!-- home contact section html end -->
+
+
+
+            <!-- home callback section html end -->
+        </main>
+      
+
+
+        <footer id="colophon" class="site-footer footer-primary">
+    <div class="top-footer">
+        <div class="container">
+            <div class="upper-footer">
+                <div class="row">
+
+                    <!-- LOGO & ABOUT -->
+                    <div class="col-lg-4 col-md-6">
+                        <aside class="widget widget_text">
+                            <div class="footer-logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo/png020.png" alt="Beyond the Limit">
+                                </a>
+                            </div>
+                            <div class="textwidget widget-text">
+                                Beyond the Limit empowers children to step into the spotlight with confidence,
+                                creativity, and joy. Join us in creating inclusive experiences that celebrate every child.
+                            </div>
+                        </aside>
+                    </div>
+
+                    <!-- CONTACT INFO -->
+                    <div class="col-lg-4 col-md-6">
+                        <aside class="widget widget_text">
+                            <h3 class="widget-title">Contact Information</h3>
+                            <div class="textwidget widget-text">
+                                <ul>
+                                    <li>
+                                        <i class="icon icon-map-marker1"></i>
+                                        33557 Derek Drive, Orlando, Florida
+                                    </li>
+                                    <li>
+                                        <a href="tel:+1456657887">
+                                            <i class="icon icon-phone1"></i>
+                                            +1 (456) 657-887, +01 2599 12
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:beyondthelimit.tn@gmail.com" class="email-link">
+  <i class="fas fa-envelope"></i>
+  <span>beyondthelimit.tn@gmail.com</span>
+</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                        
+                    </div>
+                    
+
+                    <!-- SUPPORT LINKS -->
+                    <div class="col-lg-4 col-md-6">
+                        <aside class="widget">
+                            <h3 class="widget-title">Support</h3>
+                            <ul>
+                                        <li>
+                                            <a href="#home"><span class="semi-bold">Home </span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#events"><span class="semi-bold">Events </span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#about"><span class="semi-bold">About Us </span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#partner"><span class="semi-bold">
+                                                    Partner </span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#blog"><span class="semi-bold">Blog </span></a>
+                                        </li>
+                                         <li>
+                                            <a href="#contact"><span class="semi-bold">Contact </span></a>
+                                        </li>
+                                    </ul>
+                        </aside>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- LOWER FOOTER -->
+            <div class="lower-footer mt-4">
+                <div class="row align-items-center">
+
+                    <!-- Newsletter -->
+                    <div class="col-lg-6">
+                        <div class="footer-newsletter">
+                            <h5>Subscribe for updates & stories!</h5>
+                            <form class="newsletter">
+                                <input type="email" name="email" placeholder="Enter Your Email">
+                                <button type="submit" class="button-round">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Social Links + Menu -->
+                    <div class="col-lg-6 text-lg-right text-left mt-3 mt-lg-0 pt-5">
+                        <div class="social-links mb-2">
+                            <ul>
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href=" https://www.instagram.com/beyondthelimit.tn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- <div class="footer-menu">
+                            <ul>
+                                <li><a href="policy.html">Privacy Policy</a></li>
+                                <li><a href="policy.html">Terms & Conditions</a></li>
+                               
+                            </ul>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM FOOTER -->
+    <div class="bottom-footer mt-3">
+        <div class="container">
+            <div class="copy-right text-center">
+                &copy; 2026 Beyond the Limit. All rights reserved.
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        <a id="backTotop" href="#" class="to-top-icon">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <!-- custom search field html -->
+        <div class="header-search-form">
+            <div class="container">
+                <div class="header-search-container">
+                    <form class="search-form" role="search" method="get">
+                        <input type="text" name="s" placeholder="Enter your text...">
+                    </form>
+                    <a href="#" class="search-close">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- header html end -->
+    </div>
+
+    <script>
+        gsap.from(".animate-left", { x: -60, opacity: 0, duration: 1 });
+        gsap.from(".animate-right", { x: 60, opacity: 0, duration: 1, delay: 0.2 });
+        gsap.from(".partner-icon-box", {
+            y: 40,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            delay: 0.4
+        });
+    </script>
+
+
+    <!-- JavaScript -->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="../../../cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="assets/vendors/countdown-date-loop-counter/loopcounter.js"></script>
+    <script src="assets/js/jquery.counterup.js"></script>
+    <script src="assets/vendors/modal-video/jquery-modal-video.min.js"></script>
+    <script src="assets/vendors/masonry/masonry.pkgd.min.js"></script>
+    <script src="assets/vendors/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="assets/vendors/slick/slick.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/custom.min.js"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"version":"2024.11.0","token":"2aaac9563824454ba89abdea91540009","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9c66ea1fea29f87a',t:'MTc2OTgzODQ0OA=='};var a=document.createElement('script');a.src='../../cdn-cgi/challenge-platform/h/b/scripts/jsd/d251aa49a8a3/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+
+</html>
