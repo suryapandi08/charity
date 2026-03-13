@@ -1282,8 +1282,8 @@ input[type=submit]:focus {
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   border-radius: 6px;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   position: fixed;
   right: 15px;
   bottom: 15px;
