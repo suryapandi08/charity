@@ -1,34 +1,387 @@
 <!doctype html>
 <html lang="en">
-   
-<head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <!-- favicon -->
-      <link rel="icon" type="image/png" href="assets/images/logo/png020.png">
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" media="all">
-      <!-- Fonts Awesome CSS -->
-      <link rel="stylesheet" type="text/css" href="assets/vendors/fontawesome/css/all.min.css">
-      <!-- Elmentkit Icon CSS -->
-      <link rel="stylesheet" type="text/css" href="assets/vendors/elementskit-icon-pack/assets/css/ekiticons.css">
-      <!-- jquery-ui css -->
-      <link rel="stylesheet" type="text/css" href="assets/vendors/jquery-ui/jquery-ui.min.css">
-      <!-- modal video css -->
-      <link rel="stylesheet" type="text/css" href="assets/vendors/modal-video/modal-video.min.css">
-      <!-- slick slider css -->
-      <link rel="stylesheet" type="text/css" href="assets/vendors/slick/slick.css">
-      <link rel="stylesheet" type="text/css" href="assets/vendors/slick/slick-theme.css">
-      <!-- google fonts -->
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&amp;display=swap" rel="stylesheet">
-      <!-- Custom CSS -->
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <title>Partner</title>
-      <style>
-        /* PARTNER SECTION */
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo/png020.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" media="all">
+    <!-- Fonts Awesome CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/fontawesome/css/all.min.css">
+    <!-- Elmentkit Icon CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/elementskit-icon-pack/assets/css/ekiticons.css">
+    <!-- jquery-ui css -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/jquery-ui/jquery-ui.min.css">
+    <!-- modal video css -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/modal-video/modal-video.min.css">
+    <!-- light box css -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/fancybox/dist/jquery.fancybox.min.css">
+    <!-- slick slider css -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/slick/slick-theme.css">
+          <link rel="stylesheet" href="assets/vendors/fancybox/dist/jquery.fancybox.min.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&amp;display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Beyond the Limit</title>
+
+    <style>
+        
+.home-banner {
+    position: relative;
+    background: url("assets/images/hero/hero (2).png") center/cover no-repeat;
+    padding: 190px 0 140px;
+    color: #fff;
+}
+
+.home-banner .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.sub-title {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.banner-title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.banner-title span {
+    color: #F15B43;
+}
+
+.banner-text p{
+    font-size:18px;
+    max-width:720px;
+    line-height:1.8;
+    color:#fff;
+    position:relative;
+    padding-left:28px;
+   
+}
+
+/* vertical highlight line */
+.banner-text p::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:6px;
+    width:4px;
+    height:95%;
+    background:#ff6b4a;
+    border-radius:4px;
+}
+
+/* subtle background glow */
+.banner-text{
+  
+    padding:20px 2px;
+    border-radius:10px;
+    display:inline-block;
+}
+
+.announcement-box {
+    background: rgba(255,255,255,0.12);
+    padding: 22px 26px;
+    border-left: 5px solid #ffd369;
+    margin-bottom: 35px;
+    max-width: 720px;
+}
+
+.announcement-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.banner-button a {
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.button-round {
+    background:  #F15B43;
+    color: #000;
+}
+
+.outline-round-white {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.outline-round-white:hover {
+    background: #F15B43;
+    color: #000;
+}
+
+/* ================= MOBILE MENU ================= */
+
+.slicknav_menu {
+    background: transparent;
+    padding: 0;
+}
+
+.slicknav_btn {
+    margin-top: 8px;
+}
+
+.slicknav_nav {
+    background: #111;
+    padding: 15px;
+}
+
+.slicknav_nav a {
+    color: #fff;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+    .navigation {
+        display: none !important;
+    }
+
+    .home-banner {
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 38px;
+    }
+
+    .banner-text p {
+        margin: auto auto 25px;
+        font-size: 16px;
+    }
+
+    .announcement-box {
+        margin: auto auto 30px;
+        text-align: left;
+    }
+
+    .banner-button {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        align-items: center;
+    }
+
+    .banner-button a {
+        width: 100%;
+        max-width: 320px;
+    }
+      .sub-title {
+        font-size: 11px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .banner-title {
+        font-size: 28px;
+    }
+
+    .sub-title {
+        font-size: 11px;
+        margin-top: 50px;
+    }
+
+  
+.banner-text p{
+    font-size:15px;
+    padding-left:20px;
+}
+
+.banner-text{
+    padding:16px 18px;
+}
+}
+
+
+/* event */
+  .donate-content{
+    padding: 15px 18px;   /* reduce padding */
+    min-height: 200px;     /* remove fixed height if exists */
+}
+
+
+/* about */
+
+/* ABOUT SECTION */
+
+.home-about{
+padding:80px 0;
+background:#fafafa;
+}
+
+/* MAIN IMAGE */
+
+.home-about-image img{
+width:100%;
+border-radius:18px;
+box-shadow:0 25px 45px rgba(0,0,0,0.18);
+}
+
+/* FOUNDER IMAGES */
+
+.founder-row{
+display:flex;
+gap:20px;
+margin-top:25px;
+}
+
+.founder-card{
+flex:1;
+background:#fff;
+padding:15px;
+border-radius:14px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.founder-card:hover{
+transform:translateY(-5px);
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.founder-card img{
+width:100%;
+height:380px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:10px;
+}
+
+.founder-card h5{
+font-size:16px;
+font-weight:600;
+margin-bottom:3px;
+}
+
+.founder-card span{
+font-size:14px;
+color:#777;
+}
+
+/* RIGHT CONTENT */
+
+.home-about-right{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.about-info-card{
+background:#fff;
+padding:22px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:all 0.3s ease;
+}
+
+.about-info-card:hover{
+transform:translateY(-5px);
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.about-info-card h4{
+font-size:20px;
+margin-bottom:8px;
+color:#FF2D55;
+}
+
+.about-info-card p{
+font-size:15.5px;
+line-height:1.7;
+margin-bottom:8px;
+}
+
+/* VISION MISSION */
+
+.vision-mission-card{
+background:#ffffff;
+padding:28px;
+border-radius:14px;
+box-shadow:0 12px 30px rgba(0,0,0,0.08);
+transition:all 0.3s ease;
+height:100%;
+}
+
+.vision-mission-card:hover{
+transform:translateY(-6px);
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.vm-icon{
+width:50px;
+height:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+margin-bottom:15px;
+font-size:20px;
+color:#fff;
+}
+
+.vision-card .vm-icon{
+background:#FF6A88;
+}
+
+.mission-card .vm-icon{
+background:#FF2D55;
+}
+
+.vision-mission-card h4{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.vision-mission-card p{
+font-size:16px;
+line-height:1.7;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+.founder-row{
+flex-direction:column;
+}
+
+}
+  /* PARTNER SECTION */
+
 
 .partner-section{
 padding:80px 0;
@@ -104,40 +457,7 @@ border-color:#C98B5F;
 }
 
 
-/* ICON BOXES */
 
-.partner-icons{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-margin-bottom:35px;
-}
-
-.partner-icon-box{
-text-align:center;
-padding:35px 20px;
-border-radius:18px;
-background:#fff;
-box-shadow:0 12px 30px rgba(0,0,0,0.08);
-transition:0.3s;
-}
-
-.partner-icon-box i{
-font-size:40px;
-margin-bottom:12px;
-}
-
-.partner-icon-box h5{
-font-size:18px;
-margin-bottom:6px;
-}
-
-.partner-icon-box p{
-font-size:14.5px;
-}
-
-
-/* ICON COLORS */
 /* Partner Icon Boxes */
 
 .partner-icons{
@@ -264,10 +584,48 @@ grid-template-columns:1fr;
 }
 
 }
-      </style>
-   </head>
-   <body class="home">
-     <div id="siteLoader" class="site-loader">
+      
+
+
+
+
+.home-gallery{
+padding:90px 0;
+background:#fafafa;
+}
+
+.gallery-item{
+overflow:hidden;
+border-radius:16px;
+position:relative;
+box-shadow:0 12px 30px rgba(0,0,0,0.08);
+transition:all .3s ease;
+margin-bottom: 25px;
+}
+
+.gallery-item img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+transition:transform .5s ease;
+aspect-ratio:1/1;
+
+}
+
+.gallery-item:hover img{
+transform:scale(1.1);
+}
+
+.gallery-item:hover{
+box-shadow:0 20px 45px rgba(0,0,0,0.18);
+}
+    </style>
+
+</head>
+
+<body class="home">
+    <div id="siteLoader" class="site-loader">
         <div class="preloader-content">
             <img src="assets/images/logo/Untitled design - 2026-01-31T170525.458.png" alt="">
         </div>
@@ -376,20 +734,279 @@ grid-template-columns:1fr;
             </div>
             <div class="mobile-menu-container"></div>
         </header>
-         <main id="content" class="site-main">
-            <!-- Inner Banner html start-->
-            <section class="inner-banner-wrap">
-               <div class="inner-baner-container" style="background-image: url(assets/images/inner-banner-img-1.jpg);">
-                  <div class="container">
-                     <div class="inner-banner-content">
-                        <h1 class="inner-title">Partner</h1>
-                     </div>
-                  </div>
-               </div>
+
+
+        <main id="content" class="site-main">
+            <!-- home banner section html start -->
+
+            
+<section id="home" class="home-banner">
+    <div class="overlay"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="banner-content">
+
+                    <div class="sub-title">
+                        Reframing Potential • Designed for Every Mind • Where Brilliance Takes the Stage
+                    </div>
+
+                    <h1 class="banner-title">
+                        We don't ask our children to fit the world.
+                        <span>We are building a world that fits them.</span>
+                    </h1>
+
+                   <div class="banner-text">
+    <p>
+        Beyond The Limit is an initiative created to build meaningful platforms where children can express themselves, build confidence, and be celebrated for who they are. Through inclusive and empowering experiences, it encourages children to explore their potential and step into new opportunities. Beginning with special focus events, the initiative aims to grow into a larger movement that creates many more programmes and experiences for children in the future — a true step towards many possibilities.
+    </p>
+</div>
+
+                    <div class="announcement-box">
+                        <p class="announcement-title"><strong>Thigazh</strong> is the first step of the Beyond The Limit journey, creating opportunities for children to shine with confidence, grow with pride, and be celebrated for their uniqueness.</p>
+                    </div>
+
+                    <div class="banner-button">
+                        <a href="contact.html" class="button-round">The Runway Starts Here</a>
+                        <a href="partner.html" class="outline-round-white">Partner With Us</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+            <!-- home client section html end -->
+            <!-- home donate section html start -->
+            <section id="events" class="home-donate pt-5 bg-light-grey">
+                <div class="container">
+                    <div class="section-head text-center">
+                        <div class="sub-title">EVENT</div>
+                        <h2 class="section-title">The Runway of Possibilities</h2>
+                    </div>
+
+                    <div class="donate-inner">
+                        <div class="row align-items-center">
+
+                            <!-- LEFT SIDE IMAGE -->
+                            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                                <div class="runway-image">
+                                    <img src="assets/images/event/event1.png" alt="The Runway of Possibilities"
+                                        class="img-fluid rounded">
+                                </div>
+                            </div>
+
+                            <!-- RIGHT SIDE CONTENT -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="runway-content">
+                                    
+
+                                    <p>
+                                        <strong>Thigazh</strong> is created especially for neurodivergent children, including those with autism, ADHD, Down syndrome, and other developmental differences.
+                                    </p>
+
+                                    <p>
+                                       Thigazh is designed as an inclusive fashion walk where children are given a joyful and supportive stage to express themselves, build confidence, and experience the excitement of being celebrated. The event focuses on creating a positive environment where every child feels confident, proud, valued, and encouraged.
+                                    </p>
+                                    <p>Through Thigazh, children are not just walking a ramp, they are stepping into a moment that celebrates their confidence, individuality, courage, and unique journey</p>
+
+                                    <a href="contact.html" class="button-round mt-3 mb-3">
+                                        Register Your Child to Walk
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="donate-inner">
+                        <div class="row">
+
+                            <!-- Card 1 -->
+                            <div class="col-sm-6 col-lg-6">
+                                <article class="donate-content secondary-bg">
+                                    <h3>
+                                        <i aria-hidden="true" class="icon icon-user1"></i>
+                                        Sensory-First Design
+                                    </h3>
+                                    <p>
+                                   A runway built with comfort in mind — lighting and sound to ensure every model feels safe, confident, and empowered.
+                                    </p>
+
+                                </article>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-sm-6 col-lg-6">
+                                <article class="donate-content primary-bg">
+                                    <h3>
+                                        <i aria-hidden="true" class="icon icon-save-money"></i>
+                                        Custom Couture
+                                    </h3>
+                                    <p>
+                                        Collaborative fashion designs that celebrate the personality,
+                                        creativity, and individuality of every child on the runway.
+                                    </p>
+
+                                </article>
+                            </div>
+
+                        
+
+                        </div>
+                    </div>
+
+                </div>
             </section>
-            <!-- Inner Banner html end-->
-            <!-- contact form html start -->
-           <section id="partner" class="partner-section">
+
+
+            <!-- home donate section html end -->
+
+
+
+          <section id="about" class="home-about">
+
+<div class="container">
+
+<!-- SECTION HEADING -->
+<div class="section-head text-center mb-5">
+<div class="sub-title">About Us</div>
+<h2 class="section-title">Our Collective Commitment</h2>
+</div>
+
+<div class="row align-items-start">
+
+<!-- LEFT SIDE -->
+<div class="col-lg-7">
+
+<!-- Main Image -->
+<div class="home-about-image">
+<img src="assets/images/about/about.png" alt="Founders of Beyond the Limit">
+</div>
+
+<!-- Founder Images -->
+<div class="founder-row">
+
+<div class="founder-card">
+<img src="assets/images/founder/jayashree.png" alt="K. Jayashree Senthil">
+<h5>K. Jayashree Senthil</h5>
+<span>Executive Director - of SRPPL 
+Chairperson of SRP Foundation</span>
+</div>
+
+<div class="founder-card">
+<img src="assets/images/founder/vishnu.png" alt="Dr Vishnu L">
+<h5>Dr. Vishnu L</h5>
+<span>Founder - Brainchild Rehab Centre (BRC)</span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- RIGHT SIDE -->
+<div class="col-lg-5">
+
+<div class="home-about-right">
+
+<div class="about-info-card mt-3" >
+<h4>The Founders</h4>
+
+<p>
+<strong>K. Jayashree Senthil</strong>, Executive Director of SRPPL and Chairperson of SRP Foundation, is a social impact leader committed to bridging corporate strength with community transformation.
+</p>
+
+<p>
+<strong>Dr. Vishnu L</strong>, Founder of Brainchild Rehab Centre (BRC) and a PhD Scholar in Occupational Therapy, ensures the initiative remains grounded in child-first ethics, safety, and structured therapeutic care.
+</p>
+
+</div>
+<div class="about-info-card">
+<h4>Organizers</h4>
+
+<p>
+<strong>SRP Foundation & Shree Renga Polyester</strong><br>
+Shree Renga Polyester Pvt Ltd, a sustainability-driven textile company based in Karur, converts post-consumer PET bottles into high-value recycled polyester products, contributing to a circular economy and responsible production — truly turning waste into value.
+</p>
+
+<p>
+Extending this vision beyond manufacturing, the SRP Foundation, the CSR arm of Shree Renga Polyester, works towards social impact through initiatives in education, women empowerment, youth well-being, community infrastructure, and sustainability.
+</p>
+
+<p>
+<strong>Brainchild Rehab Centre (BRC) and Crystal Neuro Centre</strong> bring specialised expertise in therapeutic support, developmental assessment, behavioural understanding, and family-centric care. Their structured approaches ensure clinical sensitivity, child-first ethics, sensory respect, and a safe environment where every child participates comfortably and confidently.
+</p>
+</div>
+
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- VISION & MISSION -->
+
+<div class="row mt-5">
+
+<div class="col-lg-6">
+
+<div class="vision-mission-card vision-card">
+
+<div class="vm-icon">
+<i class="fa fa-eye"></i>
+</div>
+
+<h4>Vision</h4>
+
+<p>
+To build an inclusive society where neurodivergent children and individuals of diverse abilities are recognised for their strengths, respected for their individuality, and given opportunities to shine. Beyond The Limit envisions a future where confidence replaces stigma and acceptance becomes the norm.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="col-lg-6">
+
+<div class="vision-mission-card mission-card">
+
+<div class="vm-icon">
+<i class="fa fa-bullseye"></i>
+</div>
+
+<h4>Mission</h4>
+
+<p>
+To create safe, structured, and empowering platforms that celebrate every child’s uniqueness, promote dignity and inclusion, provide sensory-aware and child-friendly experiences, support families through community connection, and encourage greater awareness and understanding in society.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+            <!-- home about section html end -->
+
+
+    <section id="partner" class="partner-section">
 
 <div class="container">
 
@@ -496,7 +1113,7 @@ Help us provide the stage, the costumes, and the confidence our children deserve
 </div>
 
 <!-- SPONSOR LOGOS -->
-
+<!-- 
 <div class="sponsor-logos">
 
 <h4 class="logo-title">Our Sponsors</h4>
@@ -521,7 +1138,7 @@ Help us provide the stage, the costumes, and the confidence our children deserve
 
 </div>
 
-</div>
+</div> -->
 
 </div>
 
@@ -530,9 +1147,114 @@ Help us provide the stage, the costumes, and the confidence our children deserve
 </div>
 
 </section>
-            <!-- contact form html end -->
-         </main>
-       
+            <!-- The Pulse : Blog / Media -->
+           <section id="gallery" class="home-gallery">
+<div class="container">
+
+<!-- SECTION HEADING -->
+<div class="section-head text-center">
+<div class="head-wrap">
+<div class="sub-title">Gallery</div>
+<h2 class="section-title">Model Spotlights & Behind the Scenes</h2>
+</div>
+</div>
+
+<!-- GALLERY GRID -->
+<div class="gallery-grid">
+<div class="row">
+<div class="col-md-6 col-lg-4">
+<div class="gallery-item">
+<a href="assets/images/gallery/Autism Fashion Show Brochure - 1.jpg.jpeg" data-fancybox="gallery">
+<img src="assets/images/gallery/Autism Fashion Show Brochure - 1.jpg.jpeg" alt="Gallery Image">
+</a>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+<div class="gallery-item">
+<a href="assets/images/gallery/Autism Fashion Show Brochure - 2.jpg.jpeg" data-fancybox="gallery">
+<img src="assets/images/gallery/Autism Fashion Show Brochure - 2.jpg.jpeg" alt="Gallery Image">
+</a>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+<div class="gallery-item">
+<a href="assets/images/gallery/Autism Fashion Show Brochure - 3.jpg.jpeg" data-fancybox="gallery">
+<img src="assets/images/gallery/Autism Fashion Show Brochure - 3.jpg.jpeg" alt="Gallery Image">
+</a>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</section>
+
+            <!-- home blog section html end -->
+
+            <!-- home contact section html start -->
+            <section  id="contact" class="home-contact" style="background-image: url(assets/images/contact-bf/contact.png);">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <!-- LEFT: CTA TEXT -->
+                        <div class="col-lg-6">
+                          
+                            <h2 class="section-title">
+                                Be a Part of Their Spotlight
+                            </h2>
+                            <p>
+                                Every child deserves a stage to shine. By joining Beyond the Limit,
+                                you help neurodivergent children walk the runway with confidence,
+                                creativity, and joy. Your support empowers them to be seen, heard,
+                                and celebrated for who they truly are.
+                            </p>
+
+
+                        </div>
+
+                        <!-- RIGHT: CONTACT FORM -->
+                        <div class="col-lg-6">
+                            <div class="home-contact-form">
+                                <form class="contact-form row">
+                                    <div class="col-12 mb-4">
+                                        <input type="text" class="form-control" placeholder="Your Name*">
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <input type="email" class="form-control" placeholder="Your Email*">
+                                    </div>
+                                    <div class="col-sm-12 mb-4">
+                                        <input type="number" class="form-control" placeholder="Phone Number*">
+                                    </div>
+
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="button-round">
+                                            Join the Movement
+                                        </button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Optional overlay for better readability -->
+                <div class="overlay" style="background: rgba(0,0,0,0.4);"></div>
+            </section>
+
+            <!-- home contact section html end -->
+
+
+
+            <!-- home callback section html end -->
+        </main>
+      
+
+
         <footer id="colophon" class="site-footer footer-primary">
     <div class="top-footer">
         <div class="container">
@@ -590,9 +1312,9 @@ Help us provide the stage, the costumes, and the confidence our children deserve
                             <h3 class="widget-title">Support</h3>
                             <ul>
                                         <li>
-                                            <a href=" index.html"><span class="semi-bold">Home </span></a>
+                                            <a href="index.html"><span class="semi-bold">Home </span></a>
                                         </li>
-                                        
+                                       
                                         <li>
                                             <a href="about.html"><span class="semi-bold">About Us </span></a>
                                         </li>
@@ -601,14 +1323,13 @@ Help us provide the stage, the costumes, and the confidence our children deserve
                                                     Partner </span></a>
                                         </li>
                                         <li>
-                                            <a href="#blog"><span class="semi-bold">Blog </span></a>
+                                            <a href="gallery.html"><span class="semi-bold">Gallery </span></a>
                                         </li>
                                          <li>
                                             <a href="contact.html"><span class="semi-bold">Contact </span></a>
                                         </li>
-                                        <li>
-                                           <a href="terms&condition.html"><span class="semi-bold">Terms & Conditions </span></a>
-
+                                         <li>
+                                            <a href="terms&condition.html"><span class="semi-bold"> Terms & Conditions</span></a>
                                         </li>
                                     </ul>
                         </aside>
@@ -713,6 +1434,8 @@ Help us provide the stage, the costumes, and the confidence our children deserve
     <script src="assets/vendors/slick/slick.min.js"></script>
     <script src="assets/js/jquery.slicknav.js"></script>
     <script src="assets/js/custom.min.js"></script>
+        <script src="assets/vendors/fancybox/dist/jquery.fancybox.min.js"></script>
+
     <script src="assets/js/function.js"></script>
     <script defer
         src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
